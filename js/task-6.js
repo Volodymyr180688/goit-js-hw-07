@@ -11,6 +11,7 @@ const createButton = controls.querySelector('[data-create]');
 const destroyButton = controls.querySelector('[data-destroy]');
 
 function createBoxes(amount) {
+  destroyBoxes();
   for (let i = 0; i < amount; i++) {
     const box = document.createElement('div');
     const size = 30 + i * 10;
